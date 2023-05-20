@@ -1,15 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import { Counter } from "../components/Counter";
+import { Header } from "../components/Header";
 
-const title = "Astro Example";
+const title = "About me";
 ---
 
 <Layout title={title}>
-  <main>
-    <article>
-      <h2>Counter Example</h2>
-      <Counter client:load />
-    </article>
-  </main>
+  <Header />
 </Layout>
