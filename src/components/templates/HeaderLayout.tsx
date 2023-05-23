@@ -6,7 +6,7 @@ type Props = {
   children?: ReactNode;
 };
 
-export const Layout: FC<Props> = (props) => {
+export const HeaderLayout: FC<Props> = (props) => {
   const { children } = props;
 
   return (
@@ -14,7 +14,6 @@ export const Layout: FC<Props> = (props) => {
       <div className="sticky top-0 z-50">
         <Header />
       </div>
-
       <div>{children}</div>
     </>
   );
